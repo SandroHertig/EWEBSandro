@@ -2,14 +2,16 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 }
-main {
-    margin-top: 100px;
-}
 
 nav {
     width: unset;
     margin-left: unset;
     top: 0;
+    background: white;
+}
+
+main {
+    margin-top: 90px;
 }
 
 .navbar-nav button {
@@ -27,11 +29,14 @@ html {
     height: 60vh;
 }
 
-.welcome-container {
-    padding: 100px 0;
-}
-.welcome-container .contact-icons a {
+.welcome-container.container .contact-icons a {
     margin-right: 10px;
     color: #fff;
 }
+
+main .container {
+    padding-top: 100px;
+}
+
+
     
