@@ -3,22 +3,41 @@ primary-color: #232363;
 secondary-color: #2e2d79
 tertiary-color: #4e51a2;
 */
+html {
+    scroll-padding-top: 91px;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-
 }
 
 nav {
     width: unset;
     margin-left: unset;
     background: white;
+    border-bottom: 1px solid #232363;
+}
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 main {
-    margin-top: 91px;
+    scroll-padding-top: 91px;
+    /*margin-top: 91px;*/
+}
+
+footer {
+    background-color: #2e2d79;
+    color: white;
+
+}
+footer .container {
+    height: 150px;
+    padding-top: 100px
 }
 
 .navbar-nav button {
@@ -32,7 +51,7 @@ main {
     height: 60vh;
 }
 
-.welcome-container.container .contact-icons a {
+.contact-icons a {
     margin-right: 10px;
     color: #fff;
 }

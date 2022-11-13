@@ -43,7 +43,7 @@ time component
 core styles
 */
 
-.time{
+.title{
     display: var(--timeDisplay, inline-flex);
 }
 
@@ -59,7 +59,7 @@ extensions
 skin
 */
 
-.time{
+.title{
     padding: var(--timePadding, .25rem 1.25rem .25rem);
     background-color: var(--timeBackgroundColor, #f0f0f0);
 
