@@ -186,7 +186,7 @@ SETTINGS
 */
 /**/
 .timeline{
-    --timelineMainColor: #4557bb;
+    --timelineMainColor: #4e51a2;
 }
 
 /*
@@ -232,8 +232,7 @@ p:last-child{
 
 .linktr__goal{
     background-color: rgb(209, 246, 255);
-    color: rgb(8, 49, 112);
-    box-shadow: rgb(8 49 112 / 24%) 0px 2px 8px 0px;
+    color: #4e51a2;
     border-radius: 2rem;
     padding: .75rem 1.5rem;
 }

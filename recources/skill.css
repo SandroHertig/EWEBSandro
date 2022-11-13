@@ -1,0 +1,72 @@
+/* Quelle: https://codepen.io/developerpra/pen/wvGyNva */
+
+.jumbotron{
+    /* min-width: 85% !important; */
+    max-height: 100vh;
+}
+.skill{
+    margin-top: 100px;
+    background-color: #4e51a2;
+    position: relative;
+    height: 215px;
+    width: 100%;
+    box-shadow: 0 5px 100px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+}
+.skill:hover{
+    height: 420px;
+}
+.skill-logo{
+    position: relative;
+    height: 270px;
+    width: 370px;
+    top: -70px;
+    left: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    cursor: pointer;
+    background: #fff;
+    transition: 0.2s ease-in-out;
+}
+.skill-info{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 30px;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.skill:hover .skill-info{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.1s;
+}
+.skill:hover .skill-logo{
+    margin-top: -30px;
+}
+/* icons formating */
+.skill .skill-logo i{
+    text-shadow: 5px 5px 25px rgba(0, 0, 0,0.2);
+    font-size: 100px;
+    padding: 30px ;
+}
+.skill .skill-logo .html5{
+    color: #E44D26 ;
+}
+.skill .skill-logo .css3{
+    color: #2965f1;
+}
+.skill .skill-logo .js{
+    color: #F0DB4F;
+}
+.skill .skill-logo .python{
+    color: #3a74a6;
+
+}.skill .skill-logo .shopware{
+    color: #189eff;
+}
+.skill .skill-logo .database{
+    color: #f29111;
+}

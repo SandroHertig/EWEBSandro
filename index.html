@@ -13,6 +13,7 @@
     <link href="assets/fontawsome/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="recources/timeline.css" />
+    <link rel="stylesheet" type="text/css" href="recources/skill.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
@@ -20,8 +21,8 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <header>
-        <nav class="navbar navbar-expand-lg border-bottom border-primary fixed-top">
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg border-bottom border-primary">
           <div class="container">
             <img src="media/sandroPortfolioLogo.jpeg">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -141,6 +142,21 @@
                 </div>
               </div>
             </div>
+            <div class="timeline__group">
+              <span class="timeline__year time" aria-hidden="true">2020</span>
+              <div class="timeline__cards">
+                <div class="timeline__card timelinecard">
+                  <header class="card__header">
+                    <time class="time" datetime="2008-02-02">
+                      <span>Studium Wirtschaftsinformatik</span>
+                    </time>
+                  </header>
+                  <div class="card__content">
+                    <p>Im 2020 habe ich das Studium Bachelor Wirtschaftsinformatik an der Berner Fachhochschule angefangen.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -148,7 +164,76 @@
       <hr/>
 
       <div class="container skill-container" id="skill">
+        <h1>Skills</h1>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="skill">
+              <div class="skill-logo">
+                <i class="fab fa-html5 html5"></i>
+                <h2 class="text-center">HTML</h2>
 
+              </div>
+              <div class="skill-info">
+                <span>Während meinem Studium konnte ich einige HTML-Skills erlernen.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="skill">
+              <div class="skill-logo">
+                <i class="fab fa-css3-alt css3"></i>
+                <h2 class="text-center">CSS</h2>
+              </div>
+              <div class="skill-info">
+                <span>Während meinem Studium hatte ich mehrere Module besucht, bei welchen ich CSS lernen durfte.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="skill">
+              <div class="skill-logo">
+                <i class="fab fa-js js"></i>
+                <h2 class="text-center">Javascript</h2>
+              </div>
+              <div class="skill-info">
+                <span>Bei einigen Projekten vom Studium habe ich JavaScript angewendet.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="skill">
+              <div class="skill-logo">
+                <i class="fab fa-python python"></i>
+                <h2 class="text-center">Python</h2>
+              </div>
+              <div class="skill-info">
+                <span>In den ersten Semestern des Studiums lernten wir die Programmiersprache Phyton kennen.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="skill">
+              <div class="skill-logo">
+                <i class="fab fa-shopware shopware"></i>
+                <h2 class="text-center">Shopware 6</h2>
+              </div>
+              <div class="skill-info">
+                <span>Bei Hand2Hand GmbH verwenden wir das Shopsystem Shopware 6. Dabei habe ich bei der Umsetzung und Implementierung mitgearbeitet.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="skill">
+              <div class="skill-logo">
+                <i class="fas fa-database database"></i>
+                <h2 class="text-center">MySql</h2>
+              </div>
+              <div class="skill-info">
+                <span>Im Studium haben wir bei einem grösseren Projekt mit MySQL gearbeitet.</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <hr/>
