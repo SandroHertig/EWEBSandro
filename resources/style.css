@@ -93,6 +93,7 @@ hr {
     padding-bottom: unset;
 }
 
+/* The following code is only applied for small screns (smaller than 767px) */
 @media only screen and (max-width: 767px) {
     .dashboard {
         background-position: left;
