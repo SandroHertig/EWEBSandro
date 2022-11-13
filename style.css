@@ -1,7 +1,15 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+main {
+    margin-top: 100px;
+}
+
 nav {
-    width: unset !important;
-    margin-left: unset !important;
-    top: 0 !important;
+    width: unset;
+    margin-left: unset;
+    top: 0;
 }
 
 .navbar-nav button {
@@ -12,40 +20,18 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    margin: 0;
+.dashboard {
+    background: url(media/vecteezy-blue-background.jpg) no-repeat fixed center;
+    background-size: cover;
+    color: white;
+    height: 60vh;
 }
 
-section {
-    height: 100vh;
-    width: 80vw;
+.welcome-container {
+    padding: 100px 0;
 }
-
-main {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    place-items: center flex-direction column;
-
-}
-
-nav {
-    position: absolute;
-    top: 1vh;
-    z-index: 1;
-    display: flex;
-    gap: 2em;
-    width: 90vh;
-    margin-left: 10em;
-}
-
-#leiste {
-    position: absolute;
-    top: 1vh;
-}
-
-.sticky {
-    position: fixed;
-    Top: 0;
+.welcome-container .contact-icons a {
+    margin-right: 10px;
+    color: #fff;
 }
     
