@@ -5,6 +5,8 @@ tertiary-color: #4e51a2;
 */
 html {
     scroll-padding-top: 91px;
+    margin:0;
+    padding:0;
 }
 
 body {
@@ -33,11 +35,16 @@ main {
 footer {
     background-color: #2e2d79;
     color: white;
-
+    display: flex;
+    height: 150px;
 }
 footer .container {
-    height: 150px;
-    padding-top: 100px
+    padding: 0;
+    justify-content: flex-end;
+    /* align-items: baseline; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
 }
 
 .navbar-nav button {
@@ -51,6 +58,9 @@ footer .container {
     height: 60vh;
 }
 
+.dashboard .contact-icons {
+    margin-top: 10px;
+}
 .contact-icons a {
     margin-right: 10px;
     color: #fff;
@@ -59,12 +69,13 @@ footer .container {
 .about-me-container .card-body i {
     width: 30px;
 }
-.about-me-container .card-body label {
-    padding-left: 30px;
+.about-me-container .card-body span {
+    margin-left: 30px;
 }
 
 main .container {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 hr {
@@ -82,7 +93,8 @@ hr {
     padding-bottom: unset;
 }
 
-
-
-
-    
+@media only screen and (max-width: 767px) {
+    .dashboard {
+        background-position: left;
+    }
+}
