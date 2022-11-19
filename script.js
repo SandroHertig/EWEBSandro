@@ -1,6 +1,6 @@
 jQuery(document).ready(function() {
     // Quelle: https://codepen.io/charalambosioannou/pen/LYNYrVm
-    typing_effect(['Du befindest dich auf meinem Portfolio',
+    typing_effect(['Du befindest dich auf meiner Webseite',
             'Weiter unten findest du mehr Informationen.'],
         ['#fff']);
     function typing_effect(words, colors) {
