@@ -1,10 +1,5 @@
 /* Quelle: https://codepen.io/melnik909/pen/qPjwvq */
 
-.r-title{
-    margin-top: var(--rTitleMarginTop, 0) !important;
-    margin-bottom: var(--rTitleMarginBottom, 0) !important;
-}
-
 
 p:not([class]){
     line-height: var(--cssTypographyLineHeight, 1.78);
@@ -12,42 +7,11 @@ p:not([class]){
     margin-bottom: 0;
 }
 
+
 p:not([class]):first-child{
     margin-top: 0;
 }
 
-/*
-text component
-*/
-
-.text{
-    display: var(--textDisplay, inline-flex);
-    font-size: var(--textFontSize, 1rem);
-}
-
-/*
-time component
-*/
-
-/*
-core styles
-*/
-
-.title{
-    display: var(--timeDisplay, inline-flex);
-}
-
-/*
-extensions
-*/
-
-.time__month{
-    margin-left: var(--timelineMounthMarginLeft, .25em);
-}
-
-/*
-skin
-*/
 
 .title{
     padding: var(--timePadding, .25rem 1.25rem .25rem);
@@ -57,74 +21,33 @@ skin
     font-weight: var(--timeFontWeight, 700);
     text-transform: var(--timeTextTransform, uppercase);
     color: var(--timeColor, currentColor);
+    display: var(--timeDisplay, inline-flex);
 }
 
-/*
-card component
-*/
-
-/*
-core styles
-*/
-
-.timelinecard{
-    padding: var(--timelineCardPadding, 1.5rem 1.5rem 1.25rem);
-}
-
-.timelinecard__content{
-    margin-top: var(--cardContentMarginTop, .5rem);
-}
-
-/*
-skin
-*/
 
 .timelinecard{
     border-radius: var(--timelineCardBorderRadius, 2px);
     border-left: var(--timelineCardBorderLeftWidth, 3px) solid var(--timelineCardBorderLeftColor, var(--uiTimelineMainColor));
     box-shadow: var(--timelineCardBoxShadow, 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24));
     background-color: var(--timelineCardBackgroundColor, #fff);
+    padding: var(--timelineCardPadding, 1.5rem 1.5rem 1.25rem);
 }
 
-/*
-extensions
-*/
 
 .timelinecard__title{
     --rTitleMarginTop: var(--cardTitleMarginTop, 1rem);
     font-size: var(--cardTitleFontSize, 1.25rem);
 }
 
-/*
-=====
-CORE STYLES
-=====
-*/
-
-.timeline{
-    display: var(--timelineDisplay, grid);
-    grid-row-gap: var(--timelineGroupsGap, 2rem);
-}
-
-/*
-1. If timeline__year isn't displaed the gap between it and timeline__cards isn't displayed too
-*/
-
-.timeline__year{
-    margin-bottom: 1.25rem; /* 1 */
-}
 
 .timeline__cards{
     display: var(--timeloneCardsDisplay, grid);
     grid-row-gap: var(--timeloneCardsGap, 1.5rem);
+    overflow: hidden;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
 }
 
-
-/*
-=====
-SKIN
-=====
-*/
 
 .timeline{
     --uiTimelineMainColor: var(--timelineMainColor, #222);
@@ -133,29 +56,25 @@ SKIN
     border-left: var(--timelineLineWidth, 3px) solid var(--timelineLineBackgroundColor, var(--uiTimelineMainColor));
     padding-top: 1rem;
     padding-bottom: 1.5rem;
+    display: var(--timelineDisplay, grid);
+    grid-row-gap: var(--timelineGroupsGap, 2rem);
 }
+
 
 .timeline__year{
     --timePadding: var(--timelineYearPadding, .5rem 1.5rem);
     --timeColor: var(--uiTimelineSecondaryColor);
     --timeBackgroundColor: var(--uiTimelineMainColor);
     --timeFontWeight: var(--timelineYearFontWeight, 400);
+    margin-bottom: 1.25rem;
 }
+
 
 .timeline__card{
     position: relative;
     margin-left: var(--timelineCardLineGap, 1rem);
 }
 
-/*
-1. Stoping cut box shadow
-*/
-
-.timeline__cards{
-    overflow: hidden;
-    padding-top: .25rem; /* 1 */
-    padding-bottom: .25rem; /* 1 */
-}
 
 .timeline__card::before{
     content: "";
@@ -169,21 +88,11 @@ SKIN
     z-index: -1;
 }
 
-/*
-=====
-SETTINGS
-=====
-*/
-/**/
+
 .timeline{
     --timelineMainColor: #4e51a2;
 }
 
-/*
-=====
-DEMO
-=====
-*/
 
 p{
     margin-top: 0;
@@ -191,37 +100,15 @@ p{
     line-height: 1.5;
 }
 
+
 p:last-child{
     margin-bottom: 0;
 }
+
 
 .page{
     max-width: 47rem;
     padding: 0 2rem 3rem;
     margin-left: auto;
     margin-right: auto;
-}
-
-.linktr{
-    display: flex;
-    justify-content: flex-end;
-    padding: 2rem;
-    text-align: center;
-}
-
-.linktr__goal{
-    background-color: rgb(209, 246, 255);
-    color: #4e51a2;
-    border-radius: 2rem;
-    padding: .75rem 1.5rem;
-}
-
-.r-link{
-    --uirLinkDisplay: var(--rLinkDisplay, inline-flex);
-    --uirLinkTextColor: var(--rLinkTextColor);
-    --uirLinkTextDecoration: var(--rLinkTextDecoration, none);
-
-    display: var(--uirLinkDisplay) !important;
-    color: var(--uirLinkTextColor) !important;
-    text-decoration: var(--uirLinkTextDecoration) !important;
 }

@@ -1,4 +1,4 @@
-/* Farbkonzept
+/* Farbkonzept gem. Hintergrundbild
 primary-color: #232363;
 secondary-color: #2e2d79
 tertiary-color: #4e51a2;
@@ -9,10 +9,24 @@ html {
     padding:0;
 }
 
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 }
+
+
+main {
+    scroll-padding-top: 91px;
+}
+
 
 nav {
     width: unset;
@@ -21,16 +35,10 @@ nav {
     border-bottom: 1px solid #232363;
 }
 
-header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
+.navbar-nav button {
+    margin-right: 10px;
 }
 
-main {
-    scroll-padding-top: 91px;
-    /*margin-top: 91px;*/
-}
 
 footer {
     background-color: #2e2d79;
@@ -38,6 +46,7 @@ footer {
     display: flex;
     height: 150px;
 }
+
 footer .container {
     padding: 0;
     justify-content: flex-end;
@@ -47,9 +56,6 @@ footer .container {
     margin-bottom: 10px;
 }
 
-.navbar-nav button {
-    margin-right: 10px;
-}
 
 .dashboard {
     background: url(../media/vecteezy-blue-background.jpg) no-repeat fixed center;
@@ -93,7 +99,7 @@ hr {
     padding-bottom: unset;
 }
 
-/* The following code is only applied for small screns (smaller than 767px) */
+
 @media only screen and (max-width: 767px) {
     .dashboard {
         background-position: left;
